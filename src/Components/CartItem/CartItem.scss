@@ -1,0 +1,85 @@
+.cart__wrapper {
+    position: relative;
+    .cart__delete {
+        top: 10px;
+        right: 20px;
+        position: absolute;
+        background:transparent;
+        border: none;
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        color: red;
+        cursor: pointer;
+    }
+    padding: 20px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 12px;
+    .cart__nameAndImg {
+        display: flex;
+        align-items:center;
+        gap: 20px;
+        .cart__name {
+            width: 250px;
+            font-family: "Nunito";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #006837;
+        }
+        .cart__img{
+            width: 120px;
+            height: 100px;
+        }
+    }
+    .cart__counter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+        width: 114px;
+        height: 49px;
+        border: 1px solid #343434;
+        border-radius: 16px;
+        .count__text{
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #343434;
+        }
+        .dec,
+        .inc {
+            
+            background:transparent;
+            border:none;
+            cursor: pointer;
+        }
+
+        
+    }
+    .cart__price {
+        font-family: "Nunito";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #006837;
+    }
+
+}

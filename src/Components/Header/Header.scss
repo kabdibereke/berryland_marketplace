@@ -1,0 +1,42 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #8CC63F;
+    height: 114px;
+    z-index: 46444645;
+    
+    .header__wrapper {
+        position: relative;
+        padding: 0px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+       
+        .header__cart {
+            position: relative;
+            .header__cart__counter {
+                position: absolute;
+                top: 10px;
+                right: 17px;
+                font-style: normal;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: center;
+                color: #8CC63F;
+            }
+        }
+    }
+}
+
+@media(max-width:410px) {
+    .header {
+        .header__wrapper {
+      
+            gap: 50px;
+            justify-content: flex-start;
+            
+            
+        }
+    }
+} 

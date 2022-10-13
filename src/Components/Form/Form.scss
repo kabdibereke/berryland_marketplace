@@ -1,0 +1,125 @@
+.form__wrapper {
+    width: 30%;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items:center;
+        input,  textarea  {
+            padding: 15px;
+            border-radius:12px;
+            width: 80%;
+            resize: none; 
+            border: 1px solid #8CC63F;
+            &:focus {
+                outline: none;
+            }
+      
+        }
+        .from__btn {
+            padding: 12px 8px;
+            width: 80%;
+            height: 49px;
+            background: #2F4F3C;
+            border-radius: 16px;
+            border:none;
+            border:1px solid #2F4F3C;
+            cursor: pointer;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            transition: all 0.3s;
+            &:hover {
+                transition: all 0.3s;
+                color: #2F4F3C;
+                background: #FFFFFF;
+            }
+        }
+        .from__price{
+            font-family: "Nunito";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #006837;
+        }
+        
+
+       
+    }
+}
+
+@media(max-width:1035px) {
+    .form__wrapper {
+        width: 300px;
+        height: fit-content;
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: 20px;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items:center;
+            input,  textarea  {
+                padding: 15px;
+                border-radius:12px;
+                width: 80%;
+                resize: none; 
+                border: 1px solid #8CC63F;
+                &:focus {
+                    outline: none;
+                }
+          
+            }
+            .from__btn {
+                padding: 12px 8px;
+                width: 80%;
+                height: 49px;
+                background: #2F4F3C;
+                border-radius: 16px;
+                border:none;
+                border:1px solid #2F4F3C;
+                cursor: pointer;
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #FFFFFF;
+                transition: all 0.3s;
+                &:hover {
+                    transition: all 0.3s;
+                    color: #2F4F3C;
+                    background: #FFFFFF;
+                }
+            }
+            .from__price{
+                font-family: "Nunito";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 30px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #006837;
+            }
+            
+    
+           
+        }
+    }
+}

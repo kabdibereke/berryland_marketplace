@@ -1,0 +1,82 @@
+.home {
+    margin-top:-300px;
+    .home__title {
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 52px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2F4F3C;
+    }
+    .home__tabs {
+        margin: 0 auto;
+        width: 400px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #2F4F3C;
+        margin-bottom:50px ;
+        .home__btn {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.02em;
+            color: #2F4F3C;
+            background:transparent;
+            border: none;
+            cursor: pointer;
+            &:hover {
+                border-bottom: 3px solid #2F4F3C;
+            }
+        }
+        .active {
+            border-bottom: 3px solid #2F4F3C;
+        }
+    }
+    .home__item__wrapper {
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 296px);
+        justify-content: center;
+         grid-column-gap: 25px;
+        padding: 0 10px;
+        width: 100%;
+        
+    }
+    .home__error {
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 75px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #8CC63F;
+    }
+}
+
+@media(max-width:425px) {
+    .home {
+        .home__title {
+
+            font-size: 30px;
+            line-height: 30px;
+
+        }
+        .home__tabs {
+            width: 300px;
+            justify-content: space-between;
+  
+           .home__btn {
+            font-size: 14px;
+            }
+            
+        }
+        
+    }
+    
+}

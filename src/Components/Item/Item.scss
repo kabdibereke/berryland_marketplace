@@ -1,0 +1,110 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    width: 296px;
+    height: 439px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(184, 180, 176, 0.5);
+    border-radius: 24px;
+    margin-bottom: 30px;
+    &__title {
+        font-family: 'Orelega One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2F4F3C;
+        margin-bottom: 10px;
+    }
+    &__img {
+        width: 248px;
+        height: 171px; 
+        margin-bottom: 20px; 
+    }
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .price__text  {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #006837;
+        }
+        .weight {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #000000;
+
+        }
+    }
+    &__cart {
+        display: flex;
+        justify-content: space-between;
+        .count {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            width: 114px;
+            height: 49px;
+            border: 1px solid #343434;
+            border-radius: 16px;
+            .count__text{
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #343434;
+            }
+            .dec,
+            .inc {
+                
+                background:transparent;
+                border:none;
+                cursor: pointer;
+            }
+            
+            
+
+        }
+        .btn_to_cart {
+            padding: 12px 8px;
+            width: 114px;
+            height: 49px;
+            background: #2F4F3C;
+            border-radius: 16px;
+            border:none;
+            border:1px solid #2F4F3C;
+            cursor: pointer;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            transition: all 0.3s;
+            &:hover {
+                transition: all 0.3s;
+                color: #2F4F3C;
+                background: #FFFFFF;
+            }
+
+        }
+    }
+}
