@@ -1,12 +1,17 @@
 import { useState } from "react";
 import "./Form.scss";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import emailjs from "@emailjs/browser";
-const Form = () => {
+import { useNavigate } from "react-router-dom";
+import { deleteItems } from "../../redux/slices/cartSlice";
+import swal from "sweetalert";
+const Form = ({ setLoading, loading }) => {
 	const [name, setName] = useState("");
 	const [address, setAddress] = useState("");
 	const [phone, setPhone] = useState("");
 	const [comment, seComment] = useState("");
+	const navigate = useNavigate();
+	const dispatch = useDispatch();
 	const cartItems = useSelector((state) => state.cartItems.cartItems);
 	const totalPrice = cartItems.reduce(
 		(sum, obj) => obj.price * obj.count + sum,
@@ -20,16 +25,31 @@ const Form = () => {
 		phone,
 		comment,
 	};
+
 	const sendEmail = (e) => {
 		e.preventDefault();
+		setLoading(true);
+
 		emailjs
 			.send("service_n336yno", "template_c199wus", obj, "WDejzSAbLUCwQnBoy")
 			.then(
 				function (response) {
 					console.log("SUCCESS!", response.status, response.text);
+					setLoading(false);
+					swal("Отправлено", {
+						button: false,
+					});
+					setTimeout(() => {
+						navigate("/");
+						dispatch(deleteItems());
+					}, 1000);
 				},
 				function (error) {
 					console.log("FAILED...", error);
+					swal("Что то пошло не так хз", {
+						button: false,
+					});
+					setLoading(false);
 				},
 			);
 	};
