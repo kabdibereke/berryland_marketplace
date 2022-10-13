@@ -121,3 +121,36 @@
         }
     }
 }
+
+
+@media(max-width:600px) {
+    .cart {
+        .cart__btn {
+            align-self:center ;
+            padding: 12px 8px;
+            width: 80%;
+            height: 49px;
+            background: #2F4F3C;
+            border-radius: 16px;
+            border:none;
+            border:1px solid #2F4F3C;
+            cursor: pointer;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            transition: all 0.3s;
+            &:hover {
+                transition: all 0.3s;
+                color: #2F4F3C;
+                background: #FFFFFF;
+            }
+        }
+    }
+    
+    
+}
